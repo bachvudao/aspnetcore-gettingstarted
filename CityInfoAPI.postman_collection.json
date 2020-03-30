@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "c68d7d73-4c1c-4809-aa23-6128732e3048",
+		"name": "CityInfoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cities ID 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cities ID 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cities ID String",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cities ID 7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Points Of Interests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Points Of Interests Not Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Points Of Interests 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Points Of Interests 1 Not Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PointOfInterest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/cities/3/pointsofinterest\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"3",
+						"pointsofinterest\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Points Of Interests After Adding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PointOfInterest EmptyBody",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/cities/3/pointsofinterest\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"3",
+						"pointsofinterest\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "POST PointOfInterest NoName And Long Desc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/cities/3/pointsofinterest\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"3",
+						"pointsofinterest\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "POST PointOfInterest Same Name And Desc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/cities/3/pointsofinterest\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"3",
+						"pointsofinterest\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PointOfInterest",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Updated - Central Park\",\n\t\"description\": \"Updated - The most visited park in the U.S.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PointOfInterest No Desc",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Updated - Central Park\",\n\t\"description\": \"Updated - The most visited park in the U.S.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH PointOfInterest Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"op\": \"replace\",\n\t\"path\": \"/name\",\n\t\"value\": \"Updated - Central Park\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH PointOfInterest Multiple Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"op\": \"replace\",\n\t\"path\": \"/name\",\n\t\"value\": \"Updated - Central Park\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH PointOfInterest Update Invalid Property",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"op\": \"replace\",\n\t\"path\": \"/name\",\n\t\"value\": \"Updated - Central Park\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH PointOfInterest Update Remove Name",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"op\": \"replace\",\n\t\"path\": \"/name\",\n\t\"value\": \"Updated - Central Park\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1\n"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Points Of Interests 1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/cities/1/pointsofinterest/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"pointsofinterest",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cities Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
